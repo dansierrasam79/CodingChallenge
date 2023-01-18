@@ -122,20 +122,20 @@ def MyAnswer(mylinkdlist):
    aList.append(e60.dataval)
    indexValues = duplicatesCheck(aList)
    # Associate firsttime method with the SLinkedList class
-   #SLinkedList.firsttime = firsttime
+   SLinkedList.firsttime = firsttime
    # Associate removeLinkedListNode with the SLinkedList class
    SLinkedList.removeLinkedListNode = removeLinkedListNode
    # remove linked list based on duplicate indices found
    for i in range(0, len(indexValues)):
       mylinkdlist.removeLinkedListNode(indexValues[i]-i)
    #Initialize myanswer to a string of 0 length
-   #myanswer = ""
+   myanswer = ""
    mylinkdlist.listprint()
    #call the firsttime method on mylinkdlist to eliminate duplicates
-   #myanswer = mylinkdlist.firsttime()
+   myanswer = mylinkdlist.firsttime()
    #Display the Lumos Metaverse hyperlink
    # Expected output -> https://forms.lumoslabs.co/survey/t/65a5a0c3-15b9-42da-a99c-06622e0c7bac/r/o
-   #print(myanswer)
+   print(myanswer)
 
 #Call the MyAnswer function with the created linkdlist with 60 nodes
 MyAnswer(linkdlist)
